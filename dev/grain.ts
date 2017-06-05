@@ -4,7 +4,7 @@
 class Grain extends GameObject {
         
     constructor() {
-        super("grain", document.body);
+        super("grain");
         this.width = 20;
         this.height = 24;
         this.x = Math.random() * (window.innerWidth - 20);

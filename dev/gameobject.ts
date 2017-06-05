@@ -1,5 +1,6 @@
 class GameObject {
 
+    public parent: HTMLElement;
     public div: HTMLElement;
     public x:number = 0;
     public y:number = 0;
@@ -10,9 +11,13 @@ class GameObject {
     public height:number;
     public direction:number = 1;
 
-    constructor(tag:string, parent:HTMLElement) {
-        this.div = document.createElement(tag);
-        parent.appendChild(this.div);
+    constructor(tag:string) {
+        this.parent= document.body;
+        this.div = document.createElement("div");
+        this.parent.appendChild(this.div);
+
+        this.div.setAttribute("class", tag);
+    
     }
 
     public update():void {

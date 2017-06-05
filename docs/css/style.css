@@ -15,27 +15,27 @@ body * {
     background-repeat: no-repeat;
 }
 
-phone {
+.phone {
 	width:50px; min-height:92px;
 	background-image: url('../images/phone.png');
 }
 
-grain {
+.grain {
 	width:20px; min-height:24px;
 	background-image: url('../images/grain.png');
 }
 
-zombie {
+.zombie {
 	width:67px; min-height:119px;
 	background-image: url('../images/zombie.png');
 }
 
-bird {
+.bird {
     width:67px; height:110px;
     background-image: url('../images/chickenwalking.gif');
 }
 
-ui {
+#ui {
     font-size:42px;
     text-shadow: 8px 8px 0px black;
     color:white;
