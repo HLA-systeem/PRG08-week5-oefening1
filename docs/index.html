@@ -8,9 +8,15 @@
 </head>
 <body>
 	<div id="ui"></div>
-	<audio src="1-800-473-5000.mp3" autoplay loop="true" autostart="true">
+	<audio src="1-800-473-5000.mp3" autoplay loop="true" autostart="true" id="audio">
 		
 	</audio>
-	<script src='js/main.js'></script>
+	
 </body>
+
+<script>
+  var audio = document.getElementById("audio");
+  audio.volume = 0.2;
+</script>
+<script src='js/main.js'></script>
 </html>
