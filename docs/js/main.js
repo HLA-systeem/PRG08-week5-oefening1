@@ -186,6 +186,8 @@ var Game = (function () {
     return Game;
 }());
 window.addEventListener("load", function () {
+    var audio = document.getElementById("audio");
+    audio.volume = 0.05;
     new Game();
 });
 var Grain = (function (_super) {

@@ -69,5 +69,7 @@ class Game {
 } 
 
 window.addEventListener("load", function() {
+    var audio:HTMLAudioElement = <HTMLAudioElement> document.getElementById("audio");
+    audio.volume = 0.05;
     new Game();
 });
